@@ -157,7 +157,7 @@ is_true = True and True
 is_false = True and False
 is_false = False and False
 
-# "or" will be True if and only if one or both of the two statements that it
+# "or" will be True if and only if one or both of the two statements that it 
 # combines evaluate to True:
 is_true = True or True
 is_true = True or False

@@ -35,7 +35,8 @@ compare your solution to the solution given in the file 00_solutions.py.
 # content False.
 
 # Your code here #
-
+a = 1
+b = False
 
 #
 # Task 2
@@ -47,7 +48,7 @@ compare your solution to the solution given in the file 00_solutions.py.
 a = 5.356
 
 # Your code here #
-
+a = int(a)
 
 #
 # Task 3
@@ -58,7 +59,8 @@ a = 5.356
 # What will happen to the string "test" after deleting variable 'b'?
 
 # Your code here #
-
+a = 'test'
+b = a
 
 #
 # Task 4

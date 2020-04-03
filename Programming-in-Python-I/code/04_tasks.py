@@ -36,11 +36,18 @@ compare your solution to the solution given in the file 04_solutions.py.
 # values. If the division fails due to a ValueError or TypeError, print a
 # warning and return None instead.
 
-# Your code here #
+# Your code here
 
-# Possible usage:
-# print(my_divide(5, 3))
-# print(my_divide(5, 'string'))
+def my_division(first = 1.0, second = 1.0):
+    try:
+        div = first / second
+        return div
+    except (ValueError, TypeError) as er:
+        print(f'warning: {er} try again')
+        return None
+
+print(my_division(5,3))
+print(my_division(5, 'str'))
 
 #
 # Task 2
@@ -54,7 +61,20 @@ compare your solution to the solution given in the file 04_solutions.py.
 # exception from the first attempt at adding the values.
 
 # Your code here #
-
+def addy(value1, value2):
+    try:
+        adVal = value1 + value2
+        return adVal
+    except TypeError:
+        value1 = int(value1)
+        value2 = int(value2)
+        adVal = value1 + value2
+        return adVal
+    except ValueError:
+        value1 = float(value1)
+        value2 - float(value2)
+        
+    
 # Possible usage:
 # print(add(5, 3))
 # print(add(5, '3'))
