@@ -256,7 +256,7 @@ class RandomSeqDataset(Dataset):
 trainingset = RandomSeqDataset(sequence_length=15, n_features=9)
 # Note: Shuffling would break with 1e15 samples
 training_loader = DataLoader(trainingset, shuffle=False, batch_size=4,
-                             num_workers=0)
+                             num_workers=4)
 
 for i, data in enumerate(training_loader):
     mb_sample_features, mb_sample_labels, mb_sample_ids = data
